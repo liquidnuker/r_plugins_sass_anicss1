@@ -1181,3 +1181,22 @@
 %anicss_slideOutRight {
   animation-name: slideOutRight;
 }
+
+// slideOutUp
+// ==================================================/
+@mixin anicss_slideOutUp {
+  @keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+}
+
+%anicss_slideOutUp {
+  animation-name: slideOutUp;
+}
