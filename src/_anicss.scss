@@ -1143,3 +1143,22 @@
 %anicss_slideOutDown {
   animation-name: slideOutDown;
 }
+
+// slideOutLeft
+// ==================================================/
+@mixin anicss_slideOutLeft {
+  @keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+}
+
+%anicss_slideOutLeft {
+  animation-name: slideOutLeft;
+}
