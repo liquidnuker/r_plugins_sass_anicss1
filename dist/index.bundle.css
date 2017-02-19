@@ -10,14 +10,14 @@
   animation-fill-mode: both; }
 
 .test:hover {
-  animation-name: rotateIn; }
+  animation-name: rotateInDownLeft; }
 
-@keyframes rotateIn {
+@keyframes rotateInDownLeft {
   from {
-    transform-origin: center;
-    transform: rotate3d(0, 0, 1, -200deg);
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0; }
   to {
-    transform-origin: center;
+    transform-origin: left bottom;
     transform: none;
     opacity: 1; } }
