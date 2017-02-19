@@ -689,3 +689,22 @@
 %anicss_slideInRight {
   animation-name: slideInRight;
 }
+
+// slideInUp
+// ==================================================/
+@mixin anicss_slideInUp {
+  @keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInUp {
+  animation-name: slideInUp;
+}
