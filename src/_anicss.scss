@@ -1061,3 +1061,24 @@
 %anicss_rotateOutDownLeft {
   animation-name: rotateOutDownLeft;
 }
+
+// rotateOutDownRight
+// ==================================================/
+@mixin anicss_rotateOutDownRight {
+@keyframes rotateOutDownRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+}
+
+%anicss_rotateOutDownRight {
+  animation-name: rotateOutDownRight;
+}
