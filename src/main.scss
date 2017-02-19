@@ -2,14 +2,14 @@
 
 // 
 // ==================================================/
-// @include anicss_wobble;
+// @include anicss_bounceIn;
 // .test:hover {
 //   @extend %anicss_animated;
-//   @extend %anicss_wobble;
+//   @extend %anicss_bounceIn;
 // }
 
-@include anicss_wobble;
+@include anicss_bounceIn;
 .test:hover {
 @extend %anicss_animated;
-@extend %anicss_wobble;
+@extend %anicss_bounceIn;
 }
