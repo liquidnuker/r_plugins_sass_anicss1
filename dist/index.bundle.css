@@ -10,12 +10,17 @@
   animation-fill-mode: both; }
 
 .test:hover {
-  animation-name: shake; }
+  transform-origin: top center;
+  animation-name: swing; }
 
-@keyframes shake {
-  from, to {
-    transform: translate3d(0, 0, 0); }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate3d(-10px, 0, 0); }
-  20%, 40%, 60%, 80% {
-    transform: translate3d(10px, 0, 0); } }
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg); }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg); } }
