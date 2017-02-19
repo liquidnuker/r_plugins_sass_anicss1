@@ -10,10 +10,11 @@
   animation-fill-mode: both; }
 
 .test {
-  animation-name: fadeOut; }
+  animation-name: fadeOutDown; }
 
-@keyframes fadeOut {
+@keyframes fadeOutDown {
   from {
     opacity: 1; }
   to {
-    opacity: 0; } }
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); } }

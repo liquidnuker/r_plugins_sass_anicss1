@@ -943,3 +943,22 @@
 %anicss_fadeOut {
   animation-name: fadeOut;
 }
+
+// fadeOutDown
+// ==================================================/
+@mixin anicss_fadeOutDown {
+  @keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+}
+
+%anicss_fadeOutDown {
+  animation-name: fadeOutDown;
+}
