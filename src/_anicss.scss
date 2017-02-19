@@ -670,3 +670,22 @@
 %anicss_slideInLeft {
   animation-name: slideInLeft;
 }
+
+// slideInRight
+// ==================================================/
+@mixin anicss_slideInRight {
+  @keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInRight {
+  animation-name: slideInRight;
+}
