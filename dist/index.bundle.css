@@ -10,14 +10,14 @@
   animation-fill-mode: both; }
 
 .test {
-  animation-name: bounceOut; }
+  animation-name: bounceOutDown; }
 
-@keyframes bounceOut {
+@keyframes bounceOutDown {
   20% {
-    transform: scale3d(0.9, 0.9, 0.9); }
-  50%, 55% {
+    transform: translate3d(0, 10px, 0); }
+  40%, 45% {
     opacity: 1;
-    transform: scale3d(1.1, 1.1, 1.1); }
+    transform: translate3d(0, -20px, 0); }
   to {
     opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3); } }
+    transform: translate3d(0, 2000px, 0); } }
