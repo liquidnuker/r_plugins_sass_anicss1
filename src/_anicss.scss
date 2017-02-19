@@ -930,3 +930,16 @@
 %anicss_bounceOutUp {
   animation-name: bounceOutUp;
 }
+
+// fadeOut
+// ==================================================/
+@mixin anicss_fadeOut {
+  @keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+}
+
+%anicss_fadeOut {
+  animation-name: fadeOut;
+}
