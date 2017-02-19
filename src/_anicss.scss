@@ -588,3 +588,25 @@
 %anicss_rotateInDownRight {
   animation-name: rotateInDownRight;
 }
+
+// rotateInUpLeft
+// ==================================================/
+@mixin anicss_rotateInUpLeft {
+  @keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateInUpLeft {
+  animation-name: rotateInUpLeft;
+}
