@@ -1124,3 +1124,22 @@
 %anicss_rotateOutUpRight {
   animation-name: rotateOutUpRight;
 }
+
+// slideOutDown
+// ==================================================/
+@mixin anicss_slideOutDown {
+  @keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+}
+
+%anicss_slideOutDown {
+  animation-name: slideOutDown;
+}
