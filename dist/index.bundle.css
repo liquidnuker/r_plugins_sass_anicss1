@@ -10,14 +10,11 @@
   animation-fill-mode: both; }
 
 .test:hover {
-  animation-name: rotateInUpRight; }
+  animation-name: slideInLeft; }
 
-@keyframes rotateInUpRight {
+@keyframes slideInLeft {
   from {
-    transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, -90deg);
-    opacity: 0; }
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
   to {
-    transform-origin: right bottom;
-    transform: none;
-    opacity: 1; } }
+    transform: translate3d(0, 0, 0); } }

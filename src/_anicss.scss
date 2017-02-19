@@ -632,3 +632,41 @@
 %anicss_rotateInUpRight {
   animation-name: rotateInUpRight;
 }
+
+// slideInDown
+// ==================================================/
+@mixin anicss_slideInDown {
+  @keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInDown {
+  animation-name: slideInDown;
+}
+
+// slideInLeft
+// ==================================================/
+@mixin anicss_slideInLeft {
+  @keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInLeft {
+  animation-name: slideInLeft;
+}
