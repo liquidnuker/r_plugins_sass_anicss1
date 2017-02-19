@@ -1,0 +1,574 @@
+// entrance
+// ==================================================/
+
+// bounceIn
+// ==================================================/
+@mixin anicss_bounceIn {
+  @keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+      transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+      transform: scale3d(.97, .97, .97);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+%anicss_bounceIn {
+  animation-name: bounceIn;
+}
+
+// bounceInDown
+// ==================================================/
+@mixin anicss_bounceInDown {
+  @keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+      transform: none;
+    }
+  }
+}
+
+%anicss_bounceInDown {
+  animation-name: bounceInDown;
+}
+
+// bounceInLeft
+// ==================================================/
+
+@mixin anicss_bounceInLeft {
+  @keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+}
+
+%anicss_bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+// bounceInRight
+// ==================================================/
+@mixin anicss_bounceInRight {
+  @keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+}
+
+%anicss_bounceInRight {
+  animation-name: bounceInRight;
+}
+
+// bounceInUp
+// ==================================================/
+@mixin anicss_bounceInUp {
+  @keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_bounceInUp {
+  animation-name: bounceInUp;
+}
+
+// fadeIn
+// ==================================================/
+@mixin anicss_fadeIn {
+  @keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+}
+
+%anicss_fadeIn {
+  animation-name: fadeIn;
+}
+
+// fadeInDown
+// ==================================================/
+@mixin anicss_fadeInDown {
+  @keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+}
+
+%anicss_fadeInDown {
+  animation-name: fadeInDown;
+}
+
+// fadeInLeft
+// ==================================================/
+@mixin anicss_fadeInLeft {
+  @keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+}
+
+%anicss_fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+// fadeInRight
+// ==================================================/
+@mixin anicss_fadeInRight {
+  @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+}
+
+%anicss_fadeInRight {
+  animation-name: fadeInRight;  
+}
+
+// fadeInUp
+// ==================================================/
+@mixin anicss_fadeInUp {
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+} 
+}
+
+%anicss_fadeInUp {
+  animation-name: fadeInUp;
+}
+
+// rotateIn
+// ==================================================/
+@mixin anicss_rotateIn {
+  @keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateIn {
+  animation-name: rotateIn;
+}
+
+// rotateInDownLeft
+// ==================================================/
+@mixin anicss_rotateInDownLeft {
+  @keyframes rotateInDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateInDownLeft {
+  animation-name: rotateInDownLeft;
+}
+
+// rotateInDownRight
+// ==================================================/
+@mixin anicss_rotateInDownRight {
+  @keyframes rotateInDownRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateInDownRight {
+  animation-name: rotateInDownRight;
+}
+
+// rotateInUpLeft
+// ==================================================/
+@mixin anicss_rotateInUpLeft {
+  @keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateInUpLeft {
+  animation-name: rotateInUpLeft;
+}
+
+// rotateInUpRight
+// ==================================================/
+@mixin anicss_rotateInUpRight {
+  @keyframes rotateInUpRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+}
+
+%anicss_rotateInUpRight {
+  animation-name: rotateInUpRight;
+}
+
+// slideInDown
+// ==================================================/
+@mixin anicss_slideInDown {
+  @keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInDown {
+  animation-name: slideInDown;
+}
+
+// slideInLeft
+// ==================================================/
+@mixin anicss_slideInLeft {
+  @keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInLeft {
+  animation-name: slideInLeft;
+}
+
+// slideInRight
+// ==================================================/
+@mixin anicss_slideInRight {
+  @keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInRight {
+  animation-name: slideInRight;
+}
+
+// slideInUp
+// ==================================================/
+@mixin anicss_slideInUp {
+  @keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+}
+
+%anicss_slideInUp {
+  animation-name: slideInUp;
+}
+
+// zoomIn
+// ==================================================/
+@mixin anicss_zoomIn {
+  @keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+}
+
+%anicss_zoomIn {
+  animation-name: zoomIn;
+}
+
+// zoomInDown
+// ==================================================/
+@mixin anicss_zoomInDown {
+  @keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+}
+
+%anicss_zoomInDown {
+  animation-name: zoomInDown;
+}
+
+// zoomInLeft
+// ==================================================/
+@mixin anicss_zoomInLeft {
+  @keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+}
+
+%anicss_zoomInLeft {
+  animation-name: zoomInLeft;
+}
+
+// zoomInRight
+// ==================================================/
+@mixin anicss_zoomInRight {
+  @keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+}
+
+%anicss_zoomInRight {
+  animation-name: zoomInRight;
+}
+
+// zoomInUp
+// ==================================================/
+@mixin anicss_zoomInUp {
+  @keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+}
+
+%anicss_zoomInUp {
+  animation-name: zoomInUp;
+}
