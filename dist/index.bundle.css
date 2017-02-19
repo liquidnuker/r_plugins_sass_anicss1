@@ -10,11 +10,13 @@
   animation-fill-mode: both; }
 
 .test {
-  animation-name: fadeOutUp; }
+  animation-name: rotateOut; }
 
-@keyframes fadeOutUp {
+@keyframes rotateOut {
   from {
+    transform-origin: center;
     opacity: 1; }
   to {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0); } }
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
