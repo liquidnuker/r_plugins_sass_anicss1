@@ -5,17 +5,19 @@
 *
 * Copyright (c) 2016 Daniel Eden
 */
-.test {
+.test:hover {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
-.test {
-  animation-name: fadeInUp; }
+.test:hover {
+  animation-name: rotateIn; }
 
-@keyframes fadeInUp {
+@keyframes rotateIn {
   from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0); }
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
   to {
-    opacity: 1;
-    transform: none; } }
+    transform-origin: center;
+    transform: none;
+    opacity: 1; } }
