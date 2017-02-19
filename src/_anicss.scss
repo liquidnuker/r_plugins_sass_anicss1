@@ -815,3 +815,30 @@
 %anicss_zoomInUp {
   animation-name: zoomInUp;
 }
+
+// exit
+// ==================================================/
+
+// bounceOut
+// ==================================================/
+@mixin anicss_bounceOut {
+  @keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+}
+
+%anicss_bounceOut {
+  animation-name: bounceOut;
+}
