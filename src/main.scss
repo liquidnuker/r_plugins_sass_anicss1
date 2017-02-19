@@ -2,14 +2,14 @@
 
 // 
 // ==================================================/
-// @include anicss_rotateOut;
+// @include anicss_rotateOutDownLeft;
 // .test:hover {
 //   @extend %anicss_animated;
-//   @extend %anicss_rotateOut;
+//   @extend %anicss_rotateOutDownLeft;
 // }
 
-@include anicss_rotateOut;
+@include anicss_rotateOutDownLeft;
 .test {
 @extend %anicss_animated;
-@extend %anicss_rotateOut;
+@extend %anicss_rotateOutDownLeft;
 }

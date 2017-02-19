@@ -10,13 +10,13 @@
   animation-fill-mode: both; }
 
 .test {
-  animation-name: rotateOut; }
+  animation-name: rotateOutDownLeft; }
 
-@keyframes rotateOut {
+@keyframes rotateOutDownLeft {
   from {
-    transform-origin: center;
+    transform-origin: left bottom;
     opacity: 1; }
   to {
-    transform-origin: center;
-    transform: rotate3d(0, 0, 1, 200deg);
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0; } }
