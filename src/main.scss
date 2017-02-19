@@ -2,14 +2,14 @@
 
 // 
 // ==================================================/
-// @include anicss_rubberBand;
+// @include anicss_shake;
 // .test:hover {
 //   @extend %anicss_animated;
-//   @extend %anicss_rubberBand;
+//   @extend %anicss_shake;
 // }
 
-@include anicss_rubberBand;
+@include anicss_shake;
 .test:hover {
 @extend %anicss_animated;
-@extend %anicss_rubberBand;
+@extend %anicss_shake;
 }
