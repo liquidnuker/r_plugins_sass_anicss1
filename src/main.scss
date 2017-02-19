@@ -1,0 +1,15 @@
+@import "anicss";
+
+// 
+// ==================================================/
+// @include anicss_bounce;
+// .test:hover {
+//   @extend %anicss_animated;
+//   @extend %anicss_bounce;
+// }
+
+@include anicss_bounce;
+.test:hover {
+@extend %anicss_animated;
+@extend %anicss_bounce;
+}
