@@ -22,19 +22,9 @@
   animation-iteration-count: infinite;
 }
 
-// attseek
+// categories
 // ==================================================/
 @import "anicss_attseek";
-
-
-// entrance
-// ==================================================/
 @import "anicss_entrance";
-
-
-// exit
-// ==================================================/
 @import "anicss_exit";
-
-// todo: next
-// ==================================================/
+@import "anicss_flip";
