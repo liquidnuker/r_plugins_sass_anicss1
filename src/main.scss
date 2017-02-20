@@ -2,14 +2,14 @@
 
 // 
 // ==================================================/
-// @include anicss_lightSpeedIn;
+// @include anicss_lightSpeedOut;
 // .test:hover {
 //   @extend %anicss_animated;
-//   @extend %anicss_lightSpeedIn;
+//   @extend %anicss_lightSpeedOut;
 // }
 
-@include anicss_lightSpeedIn;
+@include anicss_lightSpeedOut;
 .test {
 @extend %anicss_animated;
-@extend %anicss_lightSpeedIn;
+@extend %anicss_lightSpeedOut;
 }
