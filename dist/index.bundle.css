@@ -10,22 +10,21 @@
   animation-fill-mode: both; }
 
 .test {
-  backface-visibility: visible;
-  animation-name: flip; }
+  backface-visibility: visible !important;
+  animation-name: flipInX; }
 
-@keyframes flip {
+@keyframes flipInX {
   from {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    animation-timing-function: ease-out; }
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0; }
   40% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    animation-timing-function: ease-out; }
-  50% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     animation-timing-function: ease-in; }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
   80% {
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    animation-timing-function: ease-in; }
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
   to {
-    transform: perspective(400px);
-    animation-timing-function: ease-in; } }
+    transform: perspective(400px); } }
