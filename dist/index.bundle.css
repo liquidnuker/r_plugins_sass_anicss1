@@ -10,15 +10,19 @@
   animation-fill-mode: both; }
 
 .test {
-  backface-visibility: visible !important;
-  animation-name: flipOutY; }
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out; }
 
-@keyframes flipOutY {
+@keyframes lightSpeedIn {
   from {
-    transform: perspective(400px); }
-  30% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    transform: skewX(-5deg);
     opacity: 1; }
   to {
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    opacity: 0; } }
+    transform: none;
+    opacity: 1; } }
