@@ -128,3 +128,28 @@
    animation-name: flipOutX;
   backface-visibility: visible !important;
 }
+
+// flipOutY
+// ==================================================/
+@mixin anicss_flipOutY {
+  @keyframes flipOutY {
+  from {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}
+}
+
+%anicss_flipOutY {
+  backface-visibility: visible !important;
+  animation-name: flipOutY;
+}
