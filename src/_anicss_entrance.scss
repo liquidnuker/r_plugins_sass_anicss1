@@ -83,32 +83,32 @@
 
 @mixin anicss_bounceInLeft {
   @keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-  0% {
-    opacity: 0;
-    transform: translate3d(-3000px, 0, 0);
-  }
+    0% {
+      opacity: 0;
+      transform: translate3d(-3000px, 0, 0);
+    }
 
-  60% {
-    opacity: 1;
-    transform: translate3d(25px, 0, 0);
-  }
+    60% {
+      opacity: 1;
+      transform: translate3d(25px, 0, 0);
+    }
 
-  75% {
-    transform: translate3d(-10px, 0, 0);
-  }
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
 
-  90% {
-    transform: translate3d(5px, 0, 0);
-  }
+    90% {
+      transform: translate3d(5px, 0, 0);
+    }
 
-  to {
-    transform: none;
+    to {
+      transform: none;
+    }
   }
-}
 }
 
 %anicss_bounceInLeft {
@@ -119,32 +119,32 @@
 // ==================================================/
 @mixin anicss_bounceInRight {
   @keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-  from {
-    opacity: 0;
-    transform: translate3d(3000px, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0);
+    }
 
-  60% {
-    opacity: 1;
-    transform: translate3d(-25px, 0, 0);
-  }
+    60% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0);
+    }
 
-  75% {
-    transform: translate3d(10px, 0, 0);
-  }
+    75% {
+      transform: translate3d(10px, 0, 0);
+    }
 
-  90% {
-    transform: translate3d(-5px, 0, 0);
-  }
+    90% {
+      transform: translate3d(-5px, 0, 0);
+    }
 
-  to {
-    transform: none;
+    to {
+      transform: none;
+    }
   }
-}
 }
 
 %anicss_bounceInRight {
@@ -155,32 +155,32 @@
 // ==================================================/
 @mixin anicss_bounceInUp {
   @keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
+    from, 60%, 75%, 90%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
 
-  from {
-    opacity: 0;
-    transform: translate3d(0, 3000px, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(0, 3000px, 0);
+    }
 
-  60% {
-    opacity: 1;
-    transform: translate3d(0, -20px, 0);
-  }
+    60% {
+      opacity: 1;
+      transform: translate3d(0, -20px, 0);
+    }
 
-  75% {
-    transform: translate3d(0, 10px, 0);
-  }
+    75% {
+      transform: translate3d(0, 10px, 0);
+    }
 
-  90% {
-    transform: translate3d(0, -5px, 0);
-  }
+    90% {
+      transform: translate3d(0, -5px, 0);
+    }
 
-  to {
-    transform: translate3d(0, 0, 0);
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
-}
 }
 
 %anicss_bounceInUp {
@@ -191,9 +191,9 @@
 // ==================================================/
 @mixin anicss_fadeIn {
   @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 }
 
 %anicss_fadeIn {
@@ -204,16 +204,16 @@
 // ==================================================/
 @mixin anicss_fadeInDown {
   @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: none;
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
-}
 }
 
 %anicss_fadeInDown {
@@ -224,16 +224,16 @@
 // ==================================================/
 @mixin anicss_fadeInLeft {
   @keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: none;
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
-}
 }
 
 %anicss_fadeInLeft {
@@ -244,16 +244,16 @@
 // ==================================================/
 @mixin anicss_fadeInRight {
   @keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: none;
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
-}
 }
 
 %anicss_fadeInRight {
@@ -264,16 +264,16 @@
 // ==================================================/
 @mixin anicss_fadeInUp {
   @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
-} 
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  } 
 }
 
 %anicss_fadeInUp {
@@ -284,18 +284,18 @@
 // ==================================================/
 @mixin anicss_rotateIn {
   @keyframes rotateIn {
-  from {
-    transform-origin: center;
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
-  }
+    from {
+      transform-origin: center;
+      transform: rotate3d(0, 0, 1, -200deg);
+      opacity: 0;
+    }
 
-  to {
-    transform-origin: center;
-    transform: none;
-    opacity: 1;
+    to {
+      transform-origin: center;
+      transform: none;
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_rotateIn {
@@ -306,18 +306,18 @@
 // ==================================================/
 @mixin anicss_rotateInDownLeft {
   @keyframes rotateInDownLeft {
-  from {
-    transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, -45deg);
-    opacity: 0;
-  }
+    from {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, -45deg);
+      opacity: 0;
+    }
 
-  to {
-    transform-origin: left bottom;
-    transform: none;
-    opacity: 1;
+    to {
+      transform-origin: left bottom;
+      transform: none;
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_rotateInDownLeft {
@@ -328,18 +328,18 @@
 // ==================================================/
 @mixin anicss_rotateInDownRight {
   @keyframes rotateInDownRight {
-  from {
-    transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
+    from {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
 
-  to {
-    transform-origin: right bottom;
-    transform: none;
-    opacity: 1;
+    to {
+      transform-origin: right bottom;
+      transform: none;
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_rotateInDownRight {
@@ -350,18 +350,18 @@
 // ==================================================/
 @mixin anicss_rotateInUpLeft {
   @keyframes rotateInUpLeft {
-  from {
-    transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
+    from {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
 
-  to {
-    transform-origin: left bottom;
-    transform: none;
-    opacity: 1;
+    to {
+      transform-origin: left bottom;
+      transform: none;
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_rotateInUpLeft {
@@ -372,18 +372,18 @@
 // ==================================================/
 @mixin anicss_rotateInUpRight {
   @keyframes rotateInUpRight {
-  from {
-    transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, -90deg);
-    opacity: 0;
-  }
+    from {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, -90deg);
+      opacity: 0;
+    }
 
-  to {
-    transform-origin: right bottom;
-    transform: none;
-    opacity: 1;
+    to {
+      transform-origin: right bottom;
+      transform: none;
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_rotateInUpRight {
@@ -394,15 +394,15 @@
 // ==================================================/
 @mixin anicss_slideInDown {
   @keyframes slideInDown {
-  from {
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
 
-  to {
-    transform: translate3d(0, 0, 0);
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
-}
 }
 
 %anicss_slideInDown {
@@ -413,15 +413,15 @@
 // ==================================================/
 @mixin anicss_slideInLeft {
   @keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
 
-  to {
-    transform: translate3d(0, 0, 0);
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
-}
 }
 
 %anicss_slideInLeft {
@@ -432,15 +432,15 @@
 // ==================================================/
 @mixin anicss_slideInRight {
   @keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
 
-  to {
-    transform: translate3d(0, 0, 0);
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
-}
 }
 
 %anicss_slideInRight {
@@ -451,15 +451,15 @@
 // ==================================================/
 @mixin anicss_slideInUp {
   @keyframes slideInUp {
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
 
-  to {
-    transform: translate3d(0, 0, 0);
+    to {
+      transform: translate3d(0, 0, 0);
+    }
   }
-}
 }
 
 %anicss_slideInUp {
@@ -470,15 +470,15 @@
 // ==================================================/
 @mixin anicss_zoomIn {
   @keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(.3, .3, .3);
-  }
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
 
-  50% {
-    opacity: 1;
+    50% {
+      opacity: 1;
+    }
   }
-}
 }
 
 %anicss_zoomIn {
@@ -489,18 +489,18 @@
 // ==================================================/
 @mixin anicss_zoomInDown {
   @keyframes zoomInDown {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
+    from {
+      opacity: 0;
+      transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
 
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    60% {
+      opacity: 1;
+      transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
   }
-}
 }
 
 %anicss_zoomInDown {
@@ -511,18 +511,18 @@
 // ==================================================/
 @mixin anicss_zoomInLeft {
   @keyframes zoomInLeft {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
+    from {
+      opacity: 0;
+      transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
 
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    60% {
+      opacity: 1;
+      transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
   }
-}
 }
 
 %anicss_zoomInLeft {
@@ -533,18 +533,18 @@
 // ==================================================/
 @mixin anicss_zoomInRight {
   @keyframes zoomInRight {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
+    from {
+      opacity: 0;
+      transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
 
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    60% {
+      opacity: 1;
+      transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
   }
-}
 }
 
 %anicss_zoomInRight {
@@ -555,18 +555,18 @@
 // ==================================================/
 @mixin anicss_zoomInUp {
   @keyframes zoomInUp {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
+    from {
+      opacity: 0;
+      transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
 
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    60% {
+      opacity: 1;
+      transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
   }
-}
 }
 
 %anicss_zoomInUp {
